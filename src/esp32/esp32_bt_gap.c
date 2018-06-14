@@ -412,7 +412,7 @@ bool esp32_bt_gap_init(void) {
   if (esp_ble_gap_register_callback(esp32_gap_ev_handler) != ESP_OK) {
     return false;
   }
-
+  LOG(LL_INFO, ("11111 testtttttt sab ke sab 000000"));
   struct mg_str scan_rsp_data_hex =
       mg_mk_str(mgos_sys_config_get_bt_scan_rsp_data_hex());
   if (scan_rsp_data_hex.len > 0) {
