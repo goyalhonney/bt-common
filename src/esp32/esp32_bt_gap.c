@@ -45,7 +45,7 @@ static bool s_scanning = false;
 static int s_scan_duration_sec = 3;
 
 static esp_ble_adv_data_t s_adv_data = {
-    .set_scan_rsp = false,
+    .set_scan_rsp = true,
     .include_name = true,
     .include_txpower = true,
     .min_interval = 0x100, /* 0x100 * 0.625 = 100 ms */
