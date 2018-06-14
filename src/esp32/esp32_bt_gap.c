@@ -51,8 +51,8 @@ static esp_ble_adv_data_t s_adv_data = {
     .min_interval = 0x100, /* 0x100 * 0.625 = 100 ms */
     .max_interval = 0x200, /* 0x200 * 0.625 = 200 ms */
     .appearance = 0x00,
-    .manufacturer_len = 0,
-    .p_manufacturer_data = NULL,
+    .manufacturer_len = 2,
+    .p_manufacturer_data = "hj",
     .service_data_len = 0,
     .p_service_data = NULL,
     .service_uuid_len = 0,
