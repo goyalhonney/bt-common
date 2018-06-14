@@ -83,6 +83,7 @@ static bool start_advertising(void) {
     return false;
   }
   LOG(LL_INFO, ("BT device name %s", dev_name));
+  LOG(LL_INFO, ("Heeee"));
   if (esp_ble_gap_set_device_name(dev_name) != ESP_OK) {
     return false;
   }
